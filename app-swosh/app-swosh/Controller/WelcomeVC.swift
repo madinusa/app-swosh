@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WelcomeVC.swift
 //  app-swosh
 //
 //  Created by Rasmus Andersson on 2018-11-26.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var Swoosh: UIImageView!
-    @IBOutlet weak var bgimg: UIImageView!
+class WelcomeVC: UIViewController {
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,19 +86,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="Swoosh" destination="iCI-42-8Gw" id="yQG-I6-4dJ"/>
-                        <outlet property="bgimg" destination="gt1-Ld-MWE" id="QXk-4o-Vhy"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-378" y="165"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="wJ3-er-kWx">
             <objects>
-                <viewController id="ERv-nc-uS8" sceneMemberID="viewController">
+                <viewController id="ERv-nc-uS8" customClass="LeagueVC" customModule="app_swosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yYl-o0-hTE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,6 +151,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="ERv-nc-uS8" eventType="touchUpInside" id="4lb-GW-z38"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="Une-XH-a5o">
                                 <rect key="frame" x="0.0" y="40" width="414" height="77"/>
@@ -208,16 +207,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MVs-hB-7S0"/>
                     </view>
+                    <connections>
+                        <segue destination="hb8-L7-2XU" kind="show" identifier="skillVCSegue" id="w0t-1V-fhc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3a-cx-h2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Ghx-sk-1eO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="524.63768115942037" y="164.67391304347828"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="dn5-ly-z44">
             <objects>
-                <viewController id="hb8-L7-2XU" sceneMemberID="viewController">
+                <viewController id="hb8-L7-2XU" customClass="SkillVC" customModule="app_swosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t7k-UQ-o8u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
